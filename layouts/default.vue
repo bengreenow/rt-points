@@ -3,13 +3,12 @@
     <div class="container pt-4">
       <slot />
     </div>
+    <ClientOnly>
+      <VToast />
+    </ClientOnly>
   </div>
 </template>
 
-<script lang="ts" setup>
+<script lang="ts" setup></script>
 
-</script>
-
-<style>
-
-</style>
+<style></style>

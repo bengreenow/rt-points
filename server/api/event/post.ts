@@ -9,6 +9,7 @@ import { events } from "~/server/db/schema/event";
 
 const bodySchema = z.object({
   name: z.string(),
+  amount: z.number(),
 });
 
 export default defineEventHandler(async (e) => {
@@ -19,7 +20,7 @@ export default defineEventHandler(async (e) => {
   const result = await db.insert(events).values({
     id: uuid,
     name: body.name,
-    score: [],
+    score: new Array(body.amount).fill(0),
   });
 
   return result;

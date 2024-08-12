@@ -1,6 +1,5 @@
 <template>
-  <div>{{ data }}</div>
-  {{ error }}
+  <div class=""></div>
 </template>
 
 <script setup lang="ts">

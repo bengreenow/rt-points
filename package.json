@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@neondatabase/serverless": "^0.9.4",
+    "@nuxt/icon": "latest",
     "@nuxtjs/tailwindcss": "latest",
     "drizzle-orm": "^0.32.2",
     "nuxt": "^3.12.4",

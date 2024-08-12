@@ -1,9 +1,9 @@
 <template>
   <h1 class="text-3xl mb-4 font-bold">All Events</h1>
-  <div class="flex" v-if="data">
+  <div class="flex gap-2" v-if="data">
     <div
       v-for="d in data"
-      class="bg-slate-500 flex-col flex rounded text-white"
+      class="bg-slate-500 flex-col flex rounded text-white shadow"
     >
       <div class="p-4">
         <h2 class="text-2xl font-bold">{{ d.name }}</h2>
