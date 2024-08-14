@@ -7,6 +7,12 @@ const paramsSchema = z.object({
   id: z.string(),
 });
 
+const eventSchema = z.object({
+  id: z.string(),
+  score: z.array(z.coerce.number()),
+  name: z.string(),
+});
+
 export default defineEventHandler(async (e) => {
   const { id } = await getValidatedRouterParams(e, paramsSchema.parse);
 
@@ -14,6 +20,6 @@ export default defineEventHandler(async (e) => {
     where: (events, { eq }) => eq(events.id, id),
   });
 
-  return event;
+  return eventSchema.parse(event);
   // const event = await db.select().from(events).where(eq(events.id, id )).
 });

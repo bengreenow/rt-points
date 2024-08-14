@@ -18,7 +18,9 @@ const props = defineProps<{ label: string; name: string }>();
       :min="0"
       :default-value="18"
     >
-      <label :for="name" class="text-black font-bold">{{ label }}</label>
+      <label :for="name" v-if="label" class="text-black font-bold">{{
+        label
+      }}</label>
       <div
         class="mt-1 flex items-center border bg-blackA7 border-blackA9 rounded-md"
       >

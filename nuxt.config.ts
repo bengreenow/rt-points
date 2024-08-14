@@ -6,4 +6,10 @@ export default defineNuxtConfig({
   runtimeConfig: {
     pgUrl: "<set in secrets>",
   },
+  ssr: false,
+  nitro: {
+    experimental: {
+      websocket: true,
+    },
+  },
 });
