@@ -30,12 +30,7 @@
       </div>
       <div class="flex no-wrap gap-2">
         <VButton :label="`-${custom}`" @click="runningTotal -= custom" />
-        <VNumber
-          v-model.number="custom as any"
-          type="number"
-          label=""
-          name="custom"
-        />
+        <VNumber v-model.number="custom" type="number" label="" name="custom" />
         <VButton :label="`+${custom}`" @click="runningTotal += custom" />
       </div>
       <VButton label="Reset Running Total" @click="runningTotal = 0" />
