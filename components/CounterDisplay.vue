@@ -2,7 +2,10 @@
   <div class="flex flex-col items-center justify-center">
     <img :src="image" v-if="image" alt="Counter Logo" />
     <h2 v-if="title">{{ title }}</h2>
-    <SingleCounter class="text-6xl font-bold" :model-value="number" />
+    <SingleCounter
+      class="text-6xl font-bold text-white"
+      :model-value="number"
+    />
   </div>
 </template>
 
