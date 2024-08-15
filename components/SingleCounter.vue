@@ -6,6 +6,7 @@
       @finished="startVal = model"
       :end-val="model"
       ref="count"
+      v-bind="$attrs"
     ></CountUp>
   </client-only>
 </template>

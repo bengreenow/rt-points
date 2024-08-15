@@ -12,8 +12,10 @@
           <div class="text-slate-300 italic pl-2" v-if="d.score.length === 0">
             No scores yet
           </div>
-          <div v-for="s in d.score">
-            {{ s }}
+          <div class="flex gap-2">
+            <div v-for="s in d.score">
+              {{ s }}
+            </div>
           </div>
         </div>
       </div>
@@ -28,6 +30,14 @@
         </RouterLink>
       </div>
     </div>
+  </div>
+  <div class="pt-16">
+    <NuxtLink
+      to="/events/new"
+      class="p-4 bg-slate-500 text-white rounded hover:text-black hover:bg-white mt-16 transition-colors"
+    >
+      New event
+    </NuxtLink>
   </div>
 </template>
 
