@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center justify-center">
+  <div class="flex flex-col items-center justify-center h-dvh">
     <img :src="image" v-if="image" alt="Counter Logo" />
     <h2 v-if="title">{{ title }}</h2>
     <SingleCounter
