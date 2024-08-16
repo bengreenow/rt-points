@@ -25,6 +25,9 @@
         <RouterLink :to="`/events/${d.id}`" :is="'div'">
           <VButton label="Display"></VButton>
         </RouterLink>
+        <RouterLink :to="`/events/${d.id}/dark`" :is="'div'">
+          <VButton label="Display Dark"></VButton>
+        </RouterLink>
         <RouterLink :to="`/events/${d.id}/admin`" :is="'div'">
           <VButton label="Admin"></VButton>
         </RouterLink>
