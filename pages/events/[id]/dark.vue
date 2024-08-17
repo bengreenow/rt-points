@@ -33,6 +33,6 @@ socket.on("scoreUpdated", ({ newScores, eventId, deltas }) => {
 
 <style>
 html {
-  background-color: #000;
+  background-color: #333;
 }
 </style>

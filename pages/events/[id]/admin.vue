@@ -57,6 +57,7 @@ const updateScores = async () => {
     route.params.id
   );
   refresh();
+  runningTotals.value = new Array(data.value?.score.length || 3).fill(0);
 };
 </script>
 
