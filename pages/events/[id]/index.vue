@@ -31,4 +31,9 @@ socket.on("scoreUpdated", ({ newScores, eventId, deltas }) => {
 });
 </script>
 
-<style lang="scss" scoped></style>
+<style>
+html {
+  background-color: #333;
+  overflow: hidden;
+}
+</style>

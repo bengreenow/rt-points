@@ -48,8 +48,4 @@
 const { data } = useFetch("/api/event/list");
 </script>
 
-<style>
-html {
-  overflow: hidden;
-}
-</style>
+<style></style>
