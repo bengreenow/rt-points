@@ -3,7 +3,7 @@
     <img :src="image" v-if="image" alt="Counter Logo" />
     <h2 v-if="title">{{ title }}</h2>
     <SingleCounter
-      class="text-6xl font-bold text-white"
+      class="text-6xl font-bold text-white blackletter"
       :model-value="number"
     />
   </div>
@@ -17,4 +17,12 @@ const props = defineProps<{
 }>();
 </script>
 
-<style lang="scss" scoped></style>
+<style>
+@import url("https://use.typekit.net/glm2kjr.css");
+
+.blackletter {
+  font-family: "schwarzkopf-new", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
