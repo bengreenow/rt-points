@@ -20,6 +20,18 @@
     <div class="flex flex-col gap-2 justify-center">
       <div class="flex flex-col gap-2 items-center">
         <div class="flex">
+          <VButton label="-1000" @click="runningTotal -= 1000" />
+          <VButton label="+1000" @click="runningTotal += 1000" />
+        </div>
+        <div class="flex">
+          <VButton label="-100" @click="runningTotal -= 100" />
+          <VButton label="+100" @click="runningTotal += 100" />
+        </div>
+        <div class="flex">
+          <VButton label="-50" @click="runningTotal -= 50" />
+          <VButton label="+50" @click="runningTotal += 50" />
+        </div>
+        <div class="flex">
           <VButton label="-10" @click="runningTotal -= 10" />
           <VButton label="+10" @click="runningTotal += 10" />
         </div>
