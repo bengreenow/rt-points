@@ -3,7 +3,7 @@
     <img :src="image" v-if="image" alt="Counter Logo" />
     <h2 v-if="title">{{ title }}</h2>
     <SingleCounter
-      class="text-6xl font-bold text-white blackletter"
+      class="text-9xl font-bold text-white blackletter"
       :model-value="number"
     />
   </div>
