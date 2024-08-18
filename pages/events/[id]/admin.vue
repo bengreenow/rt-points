@@ -1,8 +1,9 @@
 <template>
   <div class="flex flex-col mb-20 pb">
     <h2 class="text-xl">Admin: {{ data?.name }}</h2>
-    <div class="flex flex-col gap-2">
+    <div class="flex flex-col md:flex-row flex-nowrap gap-2">
       <TotalControl
+        class="md:w-1/3"
         title="House Eden"
         :model-value="runningTotals.at(0) || 0"
         :currentValue="data?.score.at(0) || 0"
@@ -10,12 +11,14 @@
       />
       <TotalControl
         title="House Zion"
+        class="md:w-1/3"
         :model-value="runningTotals.at(1) || 0"
         :currentValue="data?.score.at(1) || 0"
         @update:model-value="updateTotal(1, $event)"
       />
       <TotalControl
         title="House Judah"
+        class="md:w-1/3"
         :model-value="runningTotals.at(2) || 0"
         :currentValue="data?.score.at(2) || 0"
         @update:model-value="updateTotal(2, $event)"
